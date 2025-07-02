@@ -98,13 +98,4 @@ public class CarController : MonoBehaviour
             Rigidbody.drag = 0f;
         }
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Traffic" )
-        {
-            Destroy(gameObject);
-            gameOverPanel.SetActive(true);
-        }
-    }
-    
 }
