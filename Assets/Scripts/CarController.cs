@@ -98,4 +98,9 @@ public class CarController : MonoBehaviour
             Rigidbody.drag = 0f;
         }
     }
+    public float CarSpeed()
+    {
+        float speed = Rigidbody.velocity.magnitude * 2.23693629f;
+        return speed;
+    }
 }
