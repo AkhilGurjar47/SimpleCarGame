@@ -29,7 +29,6 @@ public class CarController : MonoBehaviour
     {
         Rigidbody = GetComponent<Rigidbody>();
         Rigidbody.centerOfMass = CarCenterOfMass.localPosition;
-        gameOverPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -61,7 +60,7 @@ public class CarController : MonoBehaviour
     {
         if(horizontalInput==0)
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.Euler(0,0,0),Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation,Quaternion.Euler(0,0,0),Time.deltaTime*2);
         }
     }
     void UpdateWheels()
