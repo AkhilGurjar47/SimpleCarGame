@@ -14,7 +14,7 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform backRightWheelTransform;
     [SerializeField] private Transform backLeftWheelTransform;
 
-    [SerializeField] private float motorForce = 100f;
+    [SerializeField] private float motorForce = 200f;
     [SerializeField] private Transform CarCenterOfMass;
 
     [SerializeField] private float BreakForce = 1000f;
